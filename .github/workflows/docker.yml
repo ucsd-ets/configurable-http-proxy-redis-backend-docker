@@ -7,11 +7,11 @@ name: Docker
 
 on:
   push:
-    branches: [ "master", "ghcr", "dzodkin33-workflow-config", "dev" ]
+    branches: [ "main", "ghcr", "dzodkin33-workflow-config", "dev" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 env:
   # Use docker.io for Docker Hub if empty
